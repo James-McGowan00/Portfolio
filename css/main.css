@@ -2050,22 +2050,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   position: relative;
   overflow: hidden;
 }
-.bricks-wrapper .item-wrap .overlay {
-  cursor: zoom-in;
-}
-.bricks-wrapper .item-wrap .overlay img {
-  vertical-align: bottom;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+
 .bricks-wrapper .item-wrap .overlay::before {
   content: "";
   display: block;
   background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -2080,39 +2070,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   z-index: 1;
 }
 .bricks-wrapper .item-wrap .overlay::after {
-  content: "...";
-  font-family: georgia, serif;
-  font-size: 3rem;
-  z-index: 1;
-  display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  margin-left: -15px;
-  margin-top: -15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  color: #FFFFFF;
-  opacity: 0;
-  visibility: hidden;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+
 }
 .bricks-wrapper .item-wrap .item-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 3.6rem 0 0 3rem;
-  margin-right: 6rem;
-  z-index: 3;
 }
 .bricks-wrapper .item-wrap .item-text .folio-title {
   color: #FFFFFF;
