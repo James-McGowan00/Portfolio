@@ -1259,14 +1259,16 @@ header .header-logo a {
   margin: 0;
   padding: 0;
   outline: 0;
-  border: none;
+  border: 2.5px outset #d3d3d3;
   width: 100px;
   height: 100px;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: 100px 100px;
+  background: url("../images/portfolio-image-copy.png") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   font: 0/0 a;
   text-shadow: none;
-  color: transparent;
+  color: #080415;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1506,17 +1508,15 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #home {
-  width: 100%;
+  width: auto;
   height: 100%;
   background-color: #151515;
   background-image: url(../images/title-logo.jpg);
   background-repeat: no-repeat;
-  background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover ;
+  background-position: center 50%;
+  background-size: 175% 100%;
   background-attachment: fixed;
-  min-height: 804px;
+  min-height: 504px;
   position: relative;
 }
 #home .overlay {
@@ -1606,7 +1606,7 @@ header .header-logo a {
 /* scroll down */
 .scrolldown {
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
   right: 0;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -1718,7 +1718,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 600px) {
   #home {
-    min-height: 702px;
+    min-height: 402px;
   }
 
   .home-content-tablecell .row {
@@ -1755,7 +1755,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 @media only screen and (max-width: 400px) {
   #home {
-    min-height: 654px;
+    min-height: 354px;
   }
 
   .home-content-tablecell .row {
